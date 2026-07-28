@@ -550,7 +550,7 @@ def generic():
                 if float(row["Cost"]) < price:
                     per = round(((price-float(row["Cost"]))/price) * 100, 2)
                     
-                    print(f"A generic med is available at a {per}% LESS cost at Rs. {float(row["Cost"])}")
+                    print(f"A generic med is available at a {per}% LESS cost at Rs. {float(row['Cost'])}")
 
 
                 if float(row["Cost"]) == price:
