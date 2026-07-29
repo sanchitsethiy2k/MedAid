@@ -348,8 +348,12 @@ class Med:
             if row["Doses"] > 5:
                 print(f"You have {row['Doses']} doses of {row['Med']} left")
 
-            elif 1 <= row["Doses"] <= 5:
+            elif 1 < row["Doses"] <= 5:
                 print(f"STOCK ALERT: You have ONLY {row['Doses']} doses of {row['Med']} left")
+
+            elif row["Doses"] == 1:
+                print(f"STOCK ALERT: You have ONLY 1 dose of {row['Med']} left")
+            
 
             elif row["Doses"] == 0:
                 print(f"STOCK ALERT: You have NO doses of {row['Med']} left. Update more (via option 1) to log")
