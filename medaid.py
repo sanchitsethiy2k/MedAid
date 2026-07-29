@@ -56,7 +56,7 @@ class Patient:
                 age = aaj.year - janam.year - 1
 
             elif janam.month == aaj.month:
-                if janam.day < aaj.day:
+                if janam.day > aaj.day:
                     age = aaj.year - janam.year - 1
 
                 else:
